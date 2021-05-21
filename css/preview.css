@@ -1,0 +1,71 @@
+body{
+    font: 12px 'Lucida Sans Unicode', 'Trebuchet MS', Arial, Helvetica;
+    margin: 0;
+    background-color: #b1e0fa;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ebeef2), to(#b1e0fa));
+    background-image: -webkit-linear-gradient(top, #ebeef2, #b1e0fa);
+    background-image: -moz-linear-gradient(top, #ebeef2, #b1e0fa);
+    background-image: -ms-linear-gradient(top, #ebeef2, #b1e0fa);
+    background-image: -o-linear-gradient(top, #ebeef2, #b1e0fa);
+    background-image: linear-gradient(top, #ebeef2, #b1e0fa);
+}
+textarea{
+    font-family: 楷体;
+    font-size: 25px;
+    background-color: transparent;
+    border-bottom: 1px solid #cccccc;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-top-width: 0px;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    padding: 0px;
+    margin: 0;
+}
+div.intro_space{
+    margin-top: 30px;
+
+}
+div.intro-head{
+    font-family: 楷体;
+    font-size: 30px;
+    text-align: left;
+    margin-left:30px;
+    background: #c6daee;
+    height: 70px;
+    width: 1400px;
+    line-height: 70px;
+}
+div.intro-textarea{
+    font-family: 楷体;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 230px;
+}
+.button{
+    display: inline-block;
+    font-family: 楷体;
+    margin-right: 30px;
+}
+textarea{
+    font-family: 楷体;
+    font-size: 25px;
+}
+.image{
+    display: inline-block;
+    margin-left: 30px;
+}
+.png{
+    display: inline-block;
+    margin-top: 15px;
+    margin-right: 100px;
+
+}
+div.back-button{
+    font-family: 楷体;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left:30px;
+}
+

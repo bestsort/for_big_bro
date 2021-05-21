@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>保存本地</title>
+    <link rel="stylesheet" href="../static/css/index.css">
+</head>
+<body >
+<div class="intro_space">
+     <div class="intro-head">
+     系统简介：</div>
+    <div class="intro-textarea">
+    <textarea name="intro"  cols="50" rows="10">本系统基于生成式对抗网络的验证码识别研究构建了一个可视化界面，提供下载验证码数据集、验证码单张和多张识别功能，以及最新版模型的详细信息等。
+  验证码识别模型主要由一个pix2pix的生成式对抗网络和三层卷积神经网络构成。利用pix2pix网络可以实现验证码风格的转化，即去背景、去噪声功能。得到的纯净的无背景的验证码经过CNN进行整体识别，实验表明具有很好的识别效果。</textarea></div>
+</div>
+<form action="index.html" method="post" enctype=multipart/form-data>
+    <div class="makesample-space">
+        <div class="makesample-head">
+            生成验证码，点击生成样本
+        </div>
+        <div class="makesample-text1">
+            设置参数
+        </div>
+        <div class="makesample-number">
+            <div class="makesample-value"> 宽度：</div>
+            <input type="number" value="80" name="weight" min="0" max="256" step="10">
+            <div class="makesample-value"> 高度：</div>
+            <input type="number" value="70" name="height" min="0" max="256" step="10">
+            <div class="makesample-value"> 数量：</div>
+            <input type="number" value="100" name="count" min="0" max="10000" step="100">
+        </div>
+        <div class="makesample-button">
+            <a href="../static/resources/png.zip"  download="test"><input type="button" value="下载" class="button"></a>
+            <a href="preview.html" ><input type="button" value="预览样本" class="button"></a>
+            <input type="submit" value="提交" class="button">
+        </div>
+    </div>
+    <div class="makecaptcha-space">
+        <div class="makecaptcha-text1">
+            识别验证码
+        </div>
+        <div class="makecaptcha-button">
+        <input type='file' name='file'>
+        <input type="submit" value="提交" class="button">
+        <a href="oneResult.html" class="btn-blue block"><input type="button" value="单张识别" class="button"></a>
+        </div>
+        <div class="makecaptcha-button">
+        <input type="file" height="40px" weight="80px" value="上传批量识别压缩包" class="file-hidden">
+        <input type="submit" value="提交" class="button">
+        <a href="multipleResult.html" ><input type="button" value="批量测试" class="button"></a>
+        </div>
+    </div>
+        <div class="reset-button">
+        <input type="reset" value="重置" class="button">
+        </div>
+    </form>
+            <a href="other.html" ><input type="button" value="模型详细信息" class="button"></a>
+
+    <div class="back-button">
+        <a href="index.html" >返回</a>
+    </div>
+
+</body>
+</html>

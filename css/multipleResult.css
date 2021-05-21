@@ -1,0 +1,124 @@
+body{
+    font: 12px 'Lucida Sans Unicode', 'Trebuchet MS', Arial, Helvetica;
+    margin: 0;
+    background-color: #b1e0fa;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ebeef2), to(#b1e0fa));
+    background-image: -webkit-linear-gradient(top, #ebeef2, #b1e0fa);
+    background-image: -moz-linear-gradient(top, #ebeef2, #b1e0fa);
+    background-image: -ms-linear-gradient(top, #ebeef2, #b1e0fa);
+    background-image: -o-linear-gradient(top, #ebeef2, #b1e0fa);
+    background-image: linear-gradient(top, #ebeef2, #b1e0fa);
+}
+textarea.intro{
+    font-family: 楷体;
+    font-size: 25px;
+    background-color: transparent;
+    border-bottom: 1px solid #cccccc;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-top-width: 0px;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    padding: 0px;
+    margin: 0;
+}
+div.intro_space{
+    margin-top: 30px;
+}
+div.makesample-value{
+    display: inline-block;
+    font-size: 20px;
+    font-family: 楷体;
+}
+div.intro-head{
+    font-family: 楷体;
+    display: inline-block;
+    background: #c6daee;
+    width: 1000px;
+    font-size: 30px;
+    text-align: left;
+    margin-left:30px;
+}
+div.intro-textarea{
+    font-family: 楷体;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 230px;
+}
+.button{
+    margin-top: 15px;
+    display: inline-block;
+    font-family: 楷体;
+    margin-left: 80px;
+    width: 170px;
+    height: 30px;
+    font-size: 20px;
+}
+div.config-result{
+    font-family: 楷体;
+    background: #c6daee;
+    width: 1000px;
+    font-size: 30px;
+    text-align: left;
+    margin-left: 30px;
+}
+div.back-button{
+    font-family: 楷体;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left:30px;
+}
+div.text1{
+    font-family: 楷体;
+    background: #c6daee;
+    width: 1000px;
+    font-size: 30px;
+    text-align: left;
+    margin-left: 30px;
+}
+div.text2{
+    font-family: 楷体;
+    display: inline-block;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left:130px;
+    text-align: left;
+}
+textarea.one{
+    font-family: 楷体;
+    font-size: 20px;
+    background-color: transparent;
+    border-bottom: 1px solid #cccccc;
+    width: 800px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-top-width: 0px;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    padding: 0px;
+    margin: 0;
+}
+div.textarea1{
+    margin-left: 130px;
+    margin-top: 15px;
+}
+textarea.three{
+    font-family: 楷体;
+    font-size: 15px;
+    background-color: transparent;
+    border-bottom: 1px solid #cccccc;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-top-width: 0px;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    padding: 0px;
+    margin: 0;
+}
+div.textarea2{
+    margin-left: 130px;
+    margin-top: 15px;
+}

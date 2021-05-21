@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模型详细信息</title>
+    <link rel="stylesheet" href="../static/css/multipleResult.css">
+</head>
+<body>
+<div class="intro_space">
+    <div class="intro-head">
+        系统简介：</div>
+    <div class="intro-textarea">
+    <textarea name="intro"  cols="50" rows="10">本系统基于生成式对抗网络的验证码识别研究构建了一个可视化界面，提供下载验证码数据集、验证码单张和多张识别功能，以及最新版模型的详细信息等。
+  验证码识别模型主要由一个pix2pix的生成式对抗网络和三层卷积神经网络构成。利用pix2pix网络可以实现验证码风格的转化，即去背景、去噪声功能。得到的纯净的无背景的验证码经过CNN进行整体识别，实验表明具有很好的识别效果。</textarea></div>
+</div>
+
+        <div><div class="text2">
+            判别器损失</div> <div class="text2">  生成器损失  </div> <div class="text2"> 生成器L1距离 </div></div>
+        <div class="textarea2">
+        <img src="../static/resources/other/d_loss.png" height="200px" width="290px">
+            <img src="../static/resources/other/G_L1_loss.png" height="200px" width="290px">
+            <img src="../static/resources/other/G_loss.png" height="200px" width="290px">
+        </div>
+
+            <div class="cnn-result">
+
+    <div class="cnn-result">
+    <div class="text1">
+        CNN测试结果：<br></div>
+        <div class="textarea1">
+            <img src="../static/resources/other/train_result.jpg" height="200px" width="500px"></div>
+            <img src="../static/resources/other/test_result.jpg" height="200px" width="500px"></div>
+    </div>
+    <div class="back-button">
+        <a href="index.html" >返回</a>
+
+    </div>
+</body>
+</html>
