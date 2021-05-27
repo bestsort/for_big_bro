@@ -49,31 +49,29 @@
                                 <div class="page-title">
                                     <h2>验证码 <span class="primary">生成</span> </h2>
                                     <div style="text-align:center; margin-right: 45%">
-                                    <button type="button" class="btn btn-dark">生成样本</button>
-                                    <button type="button" class="btn btn-dark">下载样本</button>
-                                    <button type="button" class="btn btn-dark">预览样本</button>
+                                        <button type="button" id="generate_samples" class="btn btn-dark">生成样本</button>
+                                        <button type="button" id="view_samples" class="btn btn-dark">预览样本</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xs-12 col-md-6 col-lg-5">
+                            <div id="" class="col-xs-12 col-md-6 col-lg-5">
                                 <div class="input-group mb-3" style="">
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text" id="basic-1">高度</span>
+                                        <span class="input-group-text">高度</span>
                                     </div>
-                                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                                    <input type="text" class="form-control" id="generator_samples_high" aria-describedby="basic-addon3">
                                 </div>
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text" id="basic-addon3">宽度</span>
+                                        <span class="input-group-text" >宽度</span>
                                     </div>
-                                    <input type="text" class="form-control" id="basic-url1" aria-describedby="basic-addon3">
+                                    <input type="text" class="form-control" id="generator_samples_wight" aria-describedby="basic-addon3">
                                 </div>
-
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text" id="basic-addon2">数量</span>
+                                        <span class="input-group-text">数量</span>
                                     </div>
-                                    <input type="text" class="form-control" id="basic-url2" aria-describedby="basic-addon3">
+                                    <input type="text" class="form-control" id="generator_samples_count" aria-describedby="basic-addon3">
                                 </div>
                             </div>
                         </div> <!-- /.row -->
@@ -106,5 +104,8 @@
         <script src="js/jquery-validation.min.js"></script>
         <script src="js/form.min.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/config.js"></script>
+    <script src="js/generator.js"></script>
     </body>
+
 </html>
