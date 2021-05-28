@@ -10,25 +10,6 @@
 		zindex: 5
 	});
 
-	$(".testimonials").owlCarousel({
-		margin: 30,
-		autoPlay: true,
-		autoPlay : 5000,
-		responsive: {
-			0: {
-				items: 1
-			},
-			480: {
-				items: 1
-			},
-			768: {
-				items: 1
-			},
-			1024: {
-				items: 2
-			}
-		}
-	});
 
 	animatedProgressBar();
 	windowHieght();
