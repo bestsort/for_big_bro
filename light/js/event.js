@@ -12,13 +12,31 @@ $('#generate_samples').click(function () {
     οnclick=window.location.href=generate_samples["download_samples_url"]
     ajax_get(generate_samples["download_samples_url"],
         function (data) {
-        console.log(11)
         })
-}); 
+});
 
 $('#view_samples').hover(function () {
     ajax_get(generate_samples["view_samples_url"], null,
         function (data) {
             console.log(111)
         })
+})
+
+$('#submitIdentification').click(function () {
+    var dataObject = new FormData();
+    let url=generate_samples["submit_identification"];
+    let  file = $("#submitIdentificationFile")[0].files[0];
+
+    dataObject.append("file", file);
+    let xhr = new XMLHttpRequest();
+
+    xhr.open("post", generate_samples["submit_identification"], true);
+
+    // xhr.onload = function () {
+    //
+    //     alert("上传完成!");
+    //
+    // };
+
+    xhr.send(dataObject);
 })
