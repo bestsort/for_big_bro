@@ -47,9 +47,11 @@
 
 <main class="site-wrapper">
     <div class="center-in-center">
+        <div style="display: flex; height: auto">
+            <img src="../static/resources/upload.png">
+            <img src="../static/resources/upload_output.jpg">
+        </div>
 
-        <img src="../static/resources/upload.png">
-        <img src="../static/resources/upload_output.jpg">
         <div class="config-result">
             <span>识别结果： {{ result }}</span><br>
             <span>识别时间： {{ time_cost }}</span>
@@ -57,6 +59,8 @@
 
         <div>
     </div>
+    </div>
+    <a href="#" class="page-close" onclick="_close()"><i class="tf-ion-close"></i></a>
 </main>
 
 <!-- ================================
@@ -68,4 +72,9 @@ JavaScript Libraries
 <script src="../static/js/isotope.pkgd.min.js"></script>
 <script src="../static/js/jquery.nicescroll.min.js"></script>
 </body>
+<script>
+    function _close() {
+        window.self.close()
+    }
+</script>
 </html>

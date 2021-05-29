@@ -52,4 +52,6 @@ $('#submitIdentification').click(function () {
     xhr.open("post", getUrl("submit_identification"), true);
 
     xhr.send(dataObject);
+    success_prompt("上传成功", );
+
 })

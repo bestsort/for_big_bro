@@ -194,25 +194,15 @@ $.ajaxSetup({
  * @param time 消失时间
  */
 var prompt = function (message, style, time) {
-	// style = (style === undefined) ? 'alert-success' : style;
-	// time = (time === undefined) ? 1200 : time;
-	// if ($("#prompt").length === 0) {
-	// 	let prompt = '<div id="prompt" class="alert prompt"></div>';
-	// 	$("body").append(prompt);
-	// } else {
-	// 	$("#prompt").empty();
-	// }
-	// $('#prompt')
-	// 	.addClass('alert ' + style)
-	// 	.html(message)
-	// 	.view()
-	// 	.delay(time)
-	// 	.fadeOut();
+	style = (style === undefined) ? 'alert-success' : style;
+	time = (time === undefined) ? 1200 : time;
+
+	$('#prompt').show().delay(1200).hide(100)
 };
 
 // 成功提示
 var success_prompt = function (message, time) {
-	//prompt(message, 'alert-success', time);
+	prompt(message, 'alert-success', time);
 };
 
 // 失败提示
