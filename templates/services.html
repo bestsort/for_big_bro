@@ -4,7 +4,7 @@
         <!-- meta charset -->
         <meta charset="utf-8">
         <!-- site title -->
-        <title>Phantom | Personal Resume Template</title>
+        <title>模型详细信息</title>
         <!-- meta description -->
         <meta name="description" content="">
         <!-- mobile viwport meta -->
@@ -20,80 +20,70 @@
         <link rel="stylesheet" href="../static/css/owl.carousel.min.css">
         <link rel="stylesheet" href="../static/css/bootstrap.min.css">
         <link rel="stylesheet" href="../static/css/main.css">
+        <link rel="stylesheet"
+              href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css">
         <link id="color-changer" rel="stylesheet" href="static/css/colors/color-0.css">
     </head>
 
     <body>
 
-        <div class="preloader">
-            <div class="loading-mask"></div>
-            <div class="loading-mask"></div>
-            <div class="loading-mask"></div>
-            <div class="loading-mask"></div>
-            <div class="loading-mask"></div>
-        </div>
 
-        <div class="preview-wrapper">
-            <div class="switcher-head">
-                <span>Style Switcher</span>
-                <div class="switcher-trigger tf-tools"></div>
-            </div>
-
-            <div class="switcher-body">
-                <h4>Choose Color:</h4>
-                <ul class="color-options list-none">
-                    <li class="c0" data-color="red" title="Default">Default</li>
-                    <li class="c1" data-color="blue" title="Red">Red</li>
-                    <li class="c2" data-color="green" title="Green">Green</li>
-                    <li class="c3" data-color="yellow" title="Blue">Blue</li>
-                </ul>
-            </div>
-        </div>
 
         <section class="site-wrapper">
             <div class="pt-table">
                 <div class="pt-tablecell page-services relative">
-                    <a href="light" class="page-close"><i class="tf-ion-close"></i></a>
+                    <a href="index.html" class="page-close"><i class="tf-ion-close"></i></a>
                     <div class="container" style="padding-bottom: 100px">
                         <div class="row">
                             <div class="col-xs-12 col-lg-offset-1 col-lg-10">
                                 <div class="page-title text-center">
                                     <h2>模型 <span class="primary">详细信息</span> <span class="title-bg">模型</span></h2>
-                                    <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica,quam nunc putamus parum claram anteposuerit.</p>
+                                    <p></p>
                                 </div>
+                                <p style="text-align: center">pix2pix 模型参数</p>
+                                <pre class="hljs"><code id="code-1"></code></pre>
+
                                 <div>
                                     <div class="media col-xs-4" style="text-align: center">
                                         <div class="media-body">
                                             <p>判别器损失图</p>
                                         </div>
-                                        <img src="../static/img/model/img1.png" class="mr-3" alt="...">
+                                        <img src="../static/img/model/img1.png" style="width: 100%" alt="...">
                                     </div>
                                     <div class="media col-xs-4" style="text-align: center">
                                         <div class="media-body">
                                             <p>生成器损失</p>
                                         </div>
-                                        <img src="../static/img/model/img2.png" class="mr-3" alt="...">
+                                        <img src="../static/img/model/img2.png" style="width: 100%" alt="...">
 
                                     </div>
                                     <div class="media col-xs-4" style="text-align: center">
                                         <div class="media-body">
                                             <p>生成器L1距离</p>
                                         </div>
-                                        <img src="../static/img/model/img3.png" class="mr-3" alt="...">
+                                        <img src="../static/img/model/img3.png" style="width: 100%; margin-bottom: 30%" alt="...">
 
                                     </div>
+                                </div>
+
+                                <p style="text-align: center">CNN 模型参数</p>
+                                <pre class="hljs"><code id="code-2"></code></pre>
+
+                                <div>
+
+
                                     <div class="media col-xs-6" style="text-align: center">
                                         <div class="media-body">
                                             <p>训练集结果图 </p>
                                         </div>
-                                        <img src="../static/img/model/img4.jpg"  class="mr-3" alt="...">
+                                        <img src="../static/img/model/img4.jpg"  style="width: 100%" alt="...">
 
                                     </div>
                                     <div class="media col-xs-6" style="text-align: center">
                                         <div class="media-body">
                                             <p>测试集结果图</p>
                                         </div>
-                                        <img src="../static/img/model/img5.jpg" alt="...">
+                                        <img src="../static/img/model/img5.jpg" style="width: 100%" alt="...">
 
                                     </div>
                                 </div>
@@ -107,9 +97,9 @@
                     <nav class="page-nav clear">
                         <div class="container">
                             <div class="flex flex-middle space-between">
-                                <span class="prev-page"><a href="oneResult.html" class="link">&larr; Prev Page</a></span>
-                                <span class="copyright hidden-xs">Copyright &copy; 2016 Phantom, All Rights Reserved.</span>
-                                <span class="next-page"><a href="resume.html" class="link">Next Page &rarr;</a></span>
+                                <span class="prev-page"><a href="identify.html" class="link">&larr; 识别验证码</a></span>
+                                <span class="next-page"><a href="imgs.html" class="link">XXXX &rarr;</a></span>
+
                             </div>
                         </div>
                         <!-- /.page-nav -->
@@ -128,9 +118,76 @@
         <script src="../static/js/jquery.easing.min.js"></script>
         <script src="../static/js/isotope.pkgd.min.js"></script>
         <script src="../static/js/jquery.nicescroll.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
         <script src="../static/js/owl.carousel.min.js"></script>
         <script src="../static/js/jquery-validation.min.js"></script>
         <script src="../static/js/form.min.js"></script>
         <script src="../static/js/main.js"></script>
+        <script>
+            function f() {
+                const  json1 = '{\n' +
+                    '                "aspect_ratio": 1.0,\n' +
+                    '                "batch_size": 1,\n' +
+                    '                "beta1": 0.5,\n' +
+                    '                "checkpoint": null,\n' +
+                    '                "display_freq": 0,\n' +
+                    '                "flip": true,\n' +
+                    '                "gan_weight": 1.0,\n' +
+                    '                "input_dir": "pix2pix_input",\n' +
+                    '                "l1_weight": 100.0,\n' +
+                    '                "lab_colorization": false,\n' +
+                    '                "lr": 0.0002,\n' +
+                    '                "max_epochs": 200,\n' +
+                    '                "max_steps": null,\n' +
+                    '                "mode": "train",\n' +
+                    '                "ndf": 64,\n' +
+                    '                "ngf": 64,\n' +
+                    '                "output_dir": "captcha_train",\n' +
+                    '                "output_filetype": "png",\n' +
+                    '                "progress_freq": 50,\n' +
+                    '                "save_freq": 5000,\n' +
+                    '                "scale_size": 286,\n' +
+                    '                "seed": 277447412,\n' +
+                    '                "separable_conv": false,\n' +
+                    '                "summary_freq": 100,\n' +
+                    '                "trace_freq": 0,\n' +
+                    '                "which_direction": "AtoB"\n' +
+                    '            }';
+
+                let jsonCode = JSON.stringify(JSON.parse(json1),null,2) // 设置tab为两个空格
+                $('#code-1').html(jsonCode) // 给 id="code" 的标签赋值
+
+
+                const json2 = '{\n' +
+                    '              "origin_image_dir": "sample/origin/",\n' +
+                    '              "new_image_dir": "sample/new_train/",\n' +
+                    '              "train_image_dir": "sample/train/",\n' +
+                    '              "test_image_dir": "sample/test/",\n' +
+                    '              "api_image_dir": "sample/api/",\n' +
+                    '              "online_image_dir": "sample/online/",\n' +
+                    '              "local_image_dir": "sample/local/",\n' +
+                    '              "model_save_dir": "model/",\n' +
+                    '              "image_width": 170,\n' +
+                    '              "image_height": 80,\n' +
+                    '              "max_captcha": 4,\n' +
+                    '              "image_suffix": "jpg",\n' +
+                    '              "char_set": "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ",\n' +
+                    '              "use_labels_json_file": false,\n' +
+                    '              "remote_url": "",\n' +
+                    '              "cycle_stop":40000,\n' +
+                    '              "acc_stop": 0.99,\n' +
+                    '              "cycle_save": 100,\n' +
+                    '              "enable_gpu": 1,\n' +
+                    '              "train_batch_size": 50,\n' +
+                    '              "test_batch_size": 100\n' +
+                    '    }'
+                let jsonCode2 = JSON.stringify(JSON.parse(json2),null,2) // 设置tab为两个空格
+                $('#code-2').html(jsonCode) // 给 id="code" 的标签赋值
+
+                hljs.highlightAll() // 高亮
+            }
+            f()
+
+        </script>
     </body>
 </html>

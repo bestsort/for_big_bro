@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+
+</head>
+<body>
+<div id = "imgs" style="text-align: center">
+
+</div>
+
+</body>
+
+
+<script src="../static/js/vendor/jquery-2.2.4.min.js"></script>
+<script src="../static/js/vendor/bootstrap.min.js"></script>
+<script>
+    let res = ""
+    let tempUrl = "../static/img/show/show";
+    for (let i = 1; i <= 8 * 3; i++) {
+
+        res += "<img src='" + tempUrl + i + ".png'" + ">"
+        if (i % 3 === 0) {
+            $("#imgs").append("<div class='mx-12'>" + res + "</div>");
+            res = ""
+        }
+    }
+
+
+</script>
+</html>

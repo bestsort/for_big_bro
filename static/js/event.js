@@ -2,8 +2,16 @@ $('#generate_samples').click(function () {
     let hight = $('#generator_samples_high').val();
     let weight = $('#generator_samples_wight').val();
     let count = $('#generator_samples_count').val();
-    let _format = $('#generator_samples_format').val();
-    let fdefault;
+    let _format;
+    let obj = document.getElementById("generator_samples_format");
+    for (let i = 0; i < obj.length; i++) {
+        if (obj[i].checked) {
+            _format = obj[i].value;
+            break;
+        }
+    }
+
+    let fdefault = false;
 
     if (hight === "") {
         hight = default_val["hight"];
@@ -45,12 +53,6 @@ $('#submitIdentification').click(function () {
     let xhr = new XMLHttpRequest();
 
     xhr.open("post", getUrl("submit_identification"), true);
-
-    // xhr.onload = function () {
-    //
-    //     alert("上传完成!");
-    //
-    // };
 
     xhr.send(dataObject);
 })

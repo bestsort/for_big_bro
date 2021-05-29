@@ -4,7 +4,7 @@
         <!-- meta charset -->
         <meta charset="utf-8">
         <!-- site title -->
-        <title>Phantom | Personal Resume Template</title>
+        <title>生成验证码</title>
         <!-- meta description -->
         <meta name="description" content="">
         <!-- mobile viwport meta -->
@@ -24,19 +24,12 @@
 
     <body>
 
-        <div class="preloader">
-            <div class="loading-mask"></div>
-            <div class="loading-mask"></div>
-            <div class="loading-mask"></div>
-            <div class="loading-mask"></div>
-            <div class="loading-mask"></div>
-        </div>
 
         <main class="site-wrapper">
             <div class="pt-table">
                 <div class="pt-tablecell page-welcome relative">
                     <!-- .close -->
-                    <a href="light" class="page-close"><i class="tf-ion-close"></i></a>
+                    <a href="index.html" class="page-close"><i class="tf-ion-close"></i></a>
                     <!-- /.close -->
 
                     <div class="author-image-large">
@@ -73,16 +66,15 @@
                                     </div>
                                     <input type="text" class="form-control" id="generator_samples_count" aria-describedby="basic-addon3">
                                 </div>
-                                <form id="generator_samples_format">
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" value="JPG">
-                                        <label class="form-check-label" for="generator_samples_format">JPG</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" value="PNG">
-                                        <label class="form-check-label" for="generator_samples_format">PNG</label>
-                                    </div>
-                                </form>
+                                <div class="input-group mb-3">
+                                    <form id="generator_samples_format">
+    <!--                                    <div class="form-check form-check-inline">-->
+                                        <input type="radio" name="sex" value="jpg" checked>jpg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                        <!--                                        <div class="form-check form-check-inline">-->
+                                        <input type="radio" name="sex" value="png" >png
+                                    </form>
+                                </div>
                             </div>
                         </div> <!-- /.row -->
                     </div> <!-- /.container -->
@@ -91,7 +83,7 @@
                         <div class="container">
                             <div class="flex flex-middle space-between">
                                 <span class="prev-page"><a href="index.html" class="link">&larr; 首页</a></span>
-                                <span class="next-page"><a href="oneResult.html" class="link">识别验证码 &rarr;</a></span>
+                                <span class="next-page"><a href="identify.html" class="link">识别验证码 &rarr;</a></span>
                             </div>
                         </div>
                         <!-- /.page-nav -->
