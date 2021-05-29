@@ -205,7 +205,7 @@ var prompt = function (message, style, time) {
 	// $('#prompt')
 	// 	.addClass('alert ' + style)
 	// 	.html(message)
-	// 	.show()
+	// 	.view()
 	// 	.delay(time)
 	// 	.fadeOut();
 };

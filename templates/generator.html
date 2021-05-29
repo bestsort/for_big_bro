@@ -43,27 +43,46 @@
                                     <h2>验证码 <span class="primary">生成</span> </h2>
                                     <div style="text-align:center; margin-right: 45%">
                                         <button type="button" id="generate_samples" class="btn btn-dark">生成样本</button>
-                                        <button type="button" id="view_samples" class="btn btn-dark">预览样本</button>
+                                        <button type="button" id="view_samples" class="btn btn-dark" data-toggle="modal" data-target="#myModal">预览样本</button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                        <h4 class="modal-title" id="myModalLabel">样本预览</h4>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <img src="../static/img/view/1.jpg">
+                                                        <img src="../static/img/view/2.jpg">
+                                                        <img src="../static/img/view/3.jpg">
+                                                        <img src="../static/img/view/4.jpg">
+                                                        <img src="../static/img/view/5.jpg">
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div id="" class="col-xs-12 col-md-6 col-lg-5">
-                                <div class="input-group mb-3" style="">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">高度</span>
-                                    </div>
+
+
+
+                                <div class="input-group mb-3" style="margin: 20px">
+                                    <span class="input-group-addon">高度</span>
                                     <input type="text" class="form-control" id="generator_samples_high" aria-describedby="basic-addon3">
                                 </div>
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text" >宽度</span>
-                                    </div>
+                                <div class="input-group mb-3" style="margin: 20px">
+                                    <span class="input-group-addon">宽度</span>
                                     <input type="text" class="form-control" id="generator_samples_wight" aria-describedby="basic-addon3">
                                 </div>
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">数量</span>
-                                    </div>
+                                <div class="input-group mb-3" style="margin: 20px">
+                                    <span class="input-group-addon">数量</span>
                                     <input type="text" class="form-control" id="generator_samples_count" aria-describedby="basic-addon3">
                                 </div>
                                 <div class="input-group mb-3">
@@ -83,6 +102,7 @@
                         <div class="container">
                             <div class="flex flex-middle space-between">
                                 <span class="prev-page"><a href="index.html" class="link">&larr; 首页</a></span>
+                                <span class="copyright hidden-xs">豫ICP备 19031561号-1</span>
                                 <span class="next-page"><a href="identify.html" class="link">识别验证码 &rarr;</a></span>
                             </div>
                         </div>

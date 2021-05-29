@@ -6,7 +6,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
-  color: #ababab; }
+  color: #767676; }
 
 a {
   color: inherit;
@@ -15,7 +15,7 @@ a {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s; }
   a:hover, a:focus {
-    color: #ababab;
+    color: #767676;
     text-decoration: none;
     outline: 0 none; }
 

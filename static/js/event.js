@@ -37,11 +37,8 @@ $('#generate_samples').click(function () {
     download(url)
 });
 
-$('#view_samples').hover(function () {
-    ajax_get(getUrl("view_samples_url"), null,
-        function (data) {
-            console.log(111)
-        })
+$('#view_samples').click(function () {
+
 })
 
 $('#submitIdentification').click(function () {
